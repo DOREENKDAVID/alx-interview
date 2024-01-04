@@ -18,7 +18,7 @@ def validUTF8(data: List[int]) -> bool:
         i = 0
 
         while num & mask:
-            mask >>=1
+            mask >>= 1
             i += 1
         return i
     i = 0
