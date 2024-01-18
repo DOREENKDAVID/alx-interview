@@ -1,11 +1,10 @@
 #!/usr/bin/node
 
-
-; 'use strict';
+'use strict';
 
 const fetch = require('node-fetch');
 
-function getCharacters(movieId) {
+function getCharacters (movieId) {
   const apiUrl = 'https://swapi.dev/api/';
   const movieUrl = `${apiUrl}films/${movieId}/`;
 
