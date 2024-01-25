@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-
-from typing import List
+"""Rotate 2D Matrix"""
 
 
 def rotate_2d_matrix(matrix):
