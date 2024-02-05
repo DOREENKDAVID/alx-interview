@@ -13,7 +13,7 @@ def island_perimeter(grid):
     grid is rectangular, with its width and height not exceeding 100
     The grid is completely surrounded by water
     There is only one island (or nothing).
-    The island doesn’t have “lakes” (water inside that 
+    The island doesn’t have “lakes” (water inside that
     isn’t connected to the water surrounding the island).
     """
     visit = set()
@@ -41,10 +41,8 @@ def island_perimeter(grid):
         perim += depth_first_search(i - 1, j)
         return perim
 
-     # Iterate through the grid to find the first land cell
+    # Iterate through the grid to find the first land cell
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if grid[i][j] == 1:
                 return depth_first_search(i, j)
-
-
